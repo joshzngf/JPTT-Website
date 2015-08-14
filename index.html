@@ -1,0 +1,559 @@
+<!doctype html>
+<!--[if lt IE 7]><html lang="en" class="no-js ie6"><![endif]-->
+<!--[if IE 7]><html lang="en" class="no-js ie7"><![endif]-->
+<!--[if IE 8]><html lang="en" class="no-js ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>JPTT - 超好用的PTT瀏覽器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="favicon.png">
+    
+    <!-- Bootstrap 3.3.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/js/rs-plugin/css/settings.css">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+    <script type="text/javascript" src="assets/js/modernizr.custom.32033.js"></script>
+
+    <meta property="og:title" content="JPTT - 超好用的PTT瀏覽器" />
+    <meta property="og:description" content="打開JPTT，發揮鄉民的正義(Justice)，用最喜歡的方式連上PTT瀏覽！" />
+    <meta property="og:image" content="assets/img/preview-image.png"/>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- FB plugin -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "http://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.4&appId=854177054600402";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- FB plugin END-->
+
+    <div class="pre-loader">
+        <div class="load-con">
+            <img src="assets/img/logo.png" class="animated fadeInDown" alt="">
+            <div class="spinner">
+              <div class="bounce1"></div>
+              <div class="bounce2"></div>
+              <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+   
+    <header>
+        
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="fa fa-bars fa-lg"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.png" alt="" class="logo">
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#about">特色</a>
+                            </li>
+                            <li><a href="#features">功能</a>
+                            </li>
+                            <li><a href="#screens">截圖</a>
+                            </li>
+                            <li><a class="getApp" href="#getApp">立即下載</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-->
+        </nav>
+
+        
+        <!--RevSlider-->
+        <div class="tp-banner-container">
+            <div class="tp-banner" >
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfl fadeout"
+                            data-x="left"
+                            data-y="center"
+                            data-hoffset="48"
+                            data-voffset="0"
+                            data-speed="500"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img class="left-image" src="assets/img/android-start-screen.png" alt="">
+                        </div>
+
+
+                        <div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
+                            JPTT
+                        </div>
+                        <div class="tp-caption large_white_light sfb" data-x="550" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1500" data-easing="Power4.easeOut">
+                            超好用的PTT瀏覽器
+                        </div>
+
+                        <ul class="tp-caption horizontal-ul" data-x="550" data-y="center" data-hoffset="0" data-voffset="150" data-speed="1000" data-start="1700" data-easing="Power4.easeOut">
+                            <li>
+                                <div class="sfr" >
+                                    <a href="#getApp" class="btn btn-default btn-lg">立即下載</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sfb hidden-xs" >
+                                    <a href="#about" class="btn btn-primary inverse btn-lg">瞭解更多</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                     <!-- SLIDE 2 -->
+                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption lfb fadeout"
+                            data-x="center"
+                            data-y="bottom"
+                            data-hoffset="0"
+                            data-voffset="0"
+                            data-speed="1000"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/device-lineup.png" alt="">
+                        </div>
+                        
+                        
+                        
+                        <div class="tp-caption large_white_light sft" data-x="center" data-y="192" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1400" data-easing="Power4.easeOut">
+                            Android, iOS 雙平台支援<i class="fa fa-heart"></i>
+                        </div>
+                        <div class="tp-caption large_white_light sft hidden-xs" data-x="center" data-y="256" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1800" data-easing="Power4.easeOut">
+                            <div class="sfr" >
+                                <a href="#getApp" class="btn btn-default btn-lg">立即下載</a>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <!-- SLIDE 3 -->
+                    <li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption customin customout hidden-xs"
+                            data-x="right"
+                            data-y="center"
+                            data-hoffset="0"
+                            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-voffset="50"
+                            data-speed="1000"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/device-lineup-2.png" alt="">
+                        </div>
+
+                        <div class="tp-caption customin customout visible-xs"
+                            data-x="center"
+                            data-y="center"
+                            data-hoffset="0"
+                            data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                            data-voffset="0"
+                            data-speed="1000"
+                            data-start="700"
+                            data-easing="Power4.easeOut">
+                            <img src="assets/img/device-lineup-2.png" alt="">
+                        </div>
+
+                        <div class="tp-caption lfb visible-xs" data-x="center" data-y="center" data-hoffset="0" data-voffset="400" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">
+                            <div class="sfr" >
+                                <a href="#getApp" class="btn btn-default btn-lg">立即下載</a>
+                            </div>
+                        </div>
+
+                        
+                        <div class="tp-caption mediumlarge_light_white sfl hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="-50" data-speed="1000" data-start="1000" data-easing="Power4.easeOut">
+                           打開JPTT
+                        </div>
+                        <div class="tp-caption mediumlarge_light_white sft hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="0" data-speed="1000" data-start="1200" data-easing="Power4.easeOut">
+                           用最喜歡的方式連上PTT瀏覽！
+                        </div>
+                        <div class="tp-caption small_light_white sfb hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="80" data-speed="1000" data-start="1600" data-easing="Power4.easeOut">
+                           <p>JPTT讓您能輕鬆瀏覽全台最大論壇-台大批踢踢實業坊<br>有著許多貼心的功能等您來體驗！</p>
+                        </div>
+
+                        <div class="tp-caption lfl hidden-xs" data-x="left" data-y="center" data-hoffset="0" data-voffset="160" data-speed="1000" data-start="1800" data-easing="Power4.easeOut">
+                            <div class="sfr" >
+                                <a href="#getApp" class="btn btn-default btn-lg">立即下載</a>
+                            </div>
+                        </div>
+                        
+                        
+                    </li>
+
+                    
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <div class="wrapper">
+
+        
+
+        <section id="about">
+            <div class="container">
+                
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>特色</h1>
+                    <div class="divider"></div>
+                    <p>為什麼會超好用呢？</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect2">
+                            <i class="fa material-icons fa-2x">&#xE80E;</i>
+                            <h3>封面故事</h3>
+                            <p>JPTT為您整理每時每刻最熱門的文章提供您瀏覽。此外，您也可以自訂您喜歡的看板來瀏覽該看板的熱門文章。</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa material-icons fa-2x">&#xE8DD;</i>
+                            <h3>推文追蹤</h3>
+                            <p>常常推完文之後就忘記自己推過什麼文了嗎？推文追蹤自動記下您所推過的文，當有新推文的時候就會直接通知您喔！</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect5">
+                            <i class="fa material-icons fa-2x">&#xE80D;</i>
+                            <h3>輕鬆分享</h3>
+                            <p>只要按下一個按鈕，就能輕鬆地將文章分享給您的好朋友！</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6" >
+                        <div class="about-item scrollpoint sp-effect1">
+                            <i class="fa material-icons fa-2x">&#xE243;</i>
+                            <h3>高度自訂</h3>
+                            <p>擁有眾多的設定選項：包含主題、配色等外觀設定，以及自動載入圖片、ssh連線等瀏覽設定，讓您能選擇以自己最喜歡的方式來瀏覽PTT！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>功能介紹</h1>
+                    <div class="divider"></div>
+                    <p>JPTT 擁有超齊全貼心的功能！</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect1">
+                        <div class="media text-right feature">
+                            <a class="pull-right" >
+                                <i class="fa material-icons fa-2x">&#xE7EF;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">水球聊天</h3>
+                                輕鬆與鄉民互動
+                            </div>
+                        </div>
+                        <div class="media text-right feature">
+                            <a class="pull-right" >
+                                <i class="fa material-icons fa-2x">&#xE158;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">新信通知</h3>
+                                信箱內有新信件時將通知您收信
+                            </div>
+                        </div>
+                        <div class="media text-right feature">
+                            <a class="pull-right" >
+                                <i class="fa material-icons fa-2x">&#xE62F;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">SSH 連線</h3>
+                                安全的連線不怕資料外洩
+                            </div>
+                        </div>
+                        <div class="media text-right feature">
+                            <a class="pull-right" >
+                                <i class="fa material-icons fa-2x">&#xE3F4;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">自動開圖</h3>
+                                不用再為了看圖片而開啟瀏覽器了
+                            </div>
+                        </div>
+                        <div class="media text-right feature">
+                            <a class="pull-right" >
+                                <i class="fa material-icons fa-2x">&#xE0DA;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">多重帳號切換</h3>
+                                就算擁有多個帳號也可以快速地切換
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4" >
+                        <img src="assets/img/iphone-right-menu.png" class="img-responsive scrollpoint sp-effect5" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-4 scrollpoint sp-effect2">
+                        <div class="media feature">
+                            <a class="pull-left" >
+                                <i class="fa material-icons fa-2x">&#xE87D;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">收集冊</h3>
+                                收藏喜歡的文章，並同步備份至雲端
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left" >
+                                <i class="fa material-icons fa-2x">&#xE8F4;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">開燈</h3>
+                                讓低調也能被看見
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left" >
+                                <i class="fa material-icons fa-2x">&#xE8BA;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">斷線自動回復</h3>
+                                斷線時能順暢地繼續閱讀文章
+                            </div>
+                        </div>
+                        <div class="media feature">
+                            <a class="pull-left" >
+                                <i class="fa material-icons fa-2x">&#xE157;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">超連結預覽</h3>
+                                自動預覽超連結，不用怕點誤點連結。
+                            </div>
+                        </div>
+                        <div class="media active feature">
+                            <a class="pull-left" >
+                                <i class="fa material-icons fa-2x">&#xE145;</i>
+                            </a>
+                            <div class="media-body">
+                                <h3 class="media-heading">還有更多！</h3>
+                                更多貼心的功能等你來發現
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="screens">
+            <div class="container">
+
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>螢幕截圖</h1>
+                    <div class="divider"></div>
+                    <p>讓我們來一探究竟吧</p>
+                </div>
+
+                <div class="filter scrollpoint sp-effect3">
+                    <a href="javascript:void(0)" class="button js-filter-all active">全部</a>
+                    <a href="javascript:void(0)" class="button js-filter-one">Android</a>
+                    <a href="javascript:void(0)" class="button js-filter-two">iPhone</a>
+                    <a href="javascript:void(0)" class="button js-filter-three">iPad</a>
+                </div>
+                <div class="slider filtering scrollpoint sp-effect5" >
+                    <div class="one">
+                        <img src="assets/img/screenshots/Android/google_play_promo0001.png" alt="">
+                    </div>
+                    <div class="one">
+                        <img src="assets/img/screenshots/Android/google_play_promo0002.png" alt="">
+                    </div>
+                    <div class="one">
+                        <img src="assets/img/screenshots/Android/google_play_promo0003.png" alt="">
+                    </div>
+                    <div class="one">
+                        <img src="assets/img/screenshots/Android/google_play_promo0004.png" alt="">
+                    </div>
+                    <div class="one">
+                        <img src="assets/img/screenshots/Android/google_play_promo0005.png" alt="">
+                    </div>
+                    <div class="one">
+                        <img src="assets/img/screenshots/Android/google_play_promo0006.png" alt="">
+                    </div>
+                    <div class="one">
+                        <img src="assets/img/screenshots/Android/google_play_promo0007.png" alt="">
+                    </div>
+
+                    <div class="two">
+                        <img src="assets/img/screenshots/iPhone/promo-4.70001.png" alt="">
+                    </div>
+                    <div class="two">
+                        <img src="assets/img/screenshots/iPhone/promo-4.70002.png" alt="">
+                    </div>
+                    <div class="two">
+                        <img src="assets/img/screenshots/iPhone/promo-4.70003.png" alt="">
+                    </div>
+                    <div class="two">
+                        <img src="assets/img/screenshots/iPhone/promo-4.70004.png" alt="">
+                    </div>
+                    <div class="two">
+                        <img src="assets/img/screenshots/iPhone/promo-4.70005.png" alt="">
+                    </div>
+
+                    <div class="three">
+                        <img src="assets/img/screenshots/iPad/promo-iPad0001.png" alt="">
+                    </div>
+                    <div class="three">
+                        <img src="assets/img/screenshots/iPad/promo-iPad0002.png" alt="">
+                    </div>
+                    <div class="three">
+                        <img src="assets/img/screenshots/iPad/promo-iPad0003.png" alt="">
+                    </div>
+                    <div class="three">
+                        <img src="assets/img/screenshots/iPad/promo-iPad0004.png" alt="">
+                    </div>
+                    <div class="three">
+                        <img src="assets/img/screenshots/iPad/promo-iPad0005.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--section id="demo">
+            <div class="container">
+                <div class="section-heading scrollpoint sp-effect3">
+                    <h1>Demo</h1>
+                    <div class="divider"></div>
+                    <p>Take a closer look in more detail</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 scrollpoint sp-effect2">
+                        <div class="video-container" >
+                            <iframe src="http://player.vimeo.com/video/70984663"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section-->
+
+        <section id="getApp">
+            <div class="container-fluid">
+                <div class="section-heading inverse scrollpoint sp-effect3">
+                    <h1>立即下載 JPTT</h1>
+                    <div class="divider"></div>
+                    <p>馬上選擇您的平台來下載吧！</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hanging-phone scrollpoint sp-effect2 hidden-xs">
+                            <img src="assets/img/device-lineup-2.png" alt="">
+                        </div>
+                        <div class="platforms">
+                            <a href="https://play.google.com/store/apps/details?id=com.joshua.jptt" class="btn btn-primary inverse scrollpoint sp-effect1">
+                                <i class="fa fa-android fa-3x pull-left"></i>
+                                <b>Google Play</b><br>
+                                <span>下載</span>
+                            </a>
+                            
+                            <a class="btn btn-primary inverse scrollpoint sp-effect2" style="opacity=0.75;">
+                                <i class="fa fa-apple fa-3x pull-left"></i>
+                                <b>App Store</b><br>
+                                <!--span>下載</span-->
+                                <span>Coming soon</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <a href="#" class="scrollpoint sp-effect3">
+                    <img src="assets/img/logo.png" alt="" class="logo">
+                </a>
+                <div class="row">
+                <div class="fb-page" data-href="https://www.facebook.com/JPTTapp" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/JPTTapp"><a href="https://www.facebook.com/JPTTapp">JPTT</a></blockquote></div></div>
+                </div>
+
+                <div class="social">
+                    <a href="http://www.facebook.com/JPTTapp" class="scrollpoint sp-effect3"><i class="fa fa-facebook fa-lg"></i></a>
+                </div>
+                <div class="rights">
+                    <p>Copyright &copy; 2015 by Joshua Chuang.</p>
+                </div>
+            </div>
+        </footer>
+
+        
+
+    </div>
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/placeholdem.min.js"></script>
+    <script src="assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+            appMaster.preLoader();
+        });
+    </script>
+</body>
+
+</html>
